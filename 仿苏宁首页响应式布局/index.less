@@ -1,0 +1,113 @@
+@import "common";
+@basenum:50;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background: #f2f2f2;
+    height: 1000px;
+}
+.search-content {
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15rem;
+    height: (88rem / @basenum);
+    background-color: #FFDB47;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .search-left {
+        width: (60rem / @basenum);
+        height: (60rem / @basenum);
+        font-size: (30rem / @basenum);
+        margin-left: (20rem / @basenum);
+        img {
+            width: (36rem / @basenum);
+            height: 100%;
+        }
+    }
+    .search-right {
+        width: (60rem / @basenum);
+        height: (60rem / @basenum);
+        font-size: (30rem / @basenum);
+        margin-right: (20rem / @basenum);
+        img {
+            width: (36rem / @basenum);
+            height: 100%;
+        }
+    }
+    .search-center {
+        flex: 1;
+        height: (60rem / @basenum);
+        border-radius: (30rem / @basenum);
+        background-color: rgb(230, 197, 47);
+        margin-left: (20rem / @basenum);
+        margin-right: (20rem / @basenum);
+        margin-top: (5rem / @basenum);
+        position: relative;
+        span {
+            font-size: (25rem / @basenum);
+            color: #757575;
+            position: absolute;
+            left:(50rem / @basenum);
+            top:(12rem / @basenum);
+        }
+    }
+}
+.banner {
+    position: relative;
+    top:(88rem / @basenum);
+    width: (750rem / @basenum);
+    height: (260rem / @basenum);
+    .banner-img {
+        top:10px;
+        img {
+            width: (750rem / @basenum);
+            height: (260rem / @basenum);
+        }
+        
+    }
+    :nth-child(2) {
+        position: absolute;
+        border-radius: (20rem / @basenum);
+        overflow: hidden;
+        top:(60rem / @basenum);
+        left: (25rem / @basenum);
+        width: (700rem / @basenum);
+        height: (200rem / @basenum);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:(88rem / @basenum);
+    height: (284rem / @basenum);
+    width: 100%;
+    .nav-c {
+        width: (150rem / @basenum);
+        height: (142rem / @basenum);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: (84rem / @basenum);
+            height: (84rem / @basenum);
+        }
+        span {
+            font-size: (15rem / @basenum);
+            color: #757575;
+        }
+    }
+}
